@@ -73,7 +73,7 @@ const renderLink = (list_item, id) => {
     link.setAttribute('style', 'float: right');
     link.addEventListener('click', event => {
         todos.removeTask(id).then((id) => {
-            const elementToRemove = document.querySelector(`[data-key="${id}"]`);
+            const elementToRemove = document.querySelector(`[data-key='${id}']`);
             if (elementToRemove) {
                 list.removeChild(elementToRemove);
             }
