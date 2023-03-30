@@ -63,7 +63,7 @@ class Todos {
                     .then(response => response.json())
                     .then((response) => {
                     __classPrivateFieldGet(this, _Todos_instances, "m", _Todos_removeFromArray).call(this, id);
-                    resolve(response);
+                    resolve(response.id);
                 }, (error) => {
                     reject(error);
                 });
